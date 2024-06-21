@@ -12,7 +12,6 @@
 <script setup>
     import { getCurrentInstance, onMounted, reactive, toRefs, ref, } from 'vue';
     import Button from "vant/lib/button";
-    import Filed from "vant/lib/field";
 
     const { proxy } = getCurrentInstance();
     
@@ -27,7 +26,6 @@
         address: '0xB0377492a9a467BB4dB3553c84592E347c84cAb9',
         privateKey: '0x6e6e5557b45283cb6342be11009b7f5efa8f60945671f95c81d38403bb0200d7',
         balance: null,
-        transferAmount: 0
     });
 
 
@@ -60,7 +58,7 @@
         // 获取预计转账Gas
         const gasPrice = await web3.eth.getGasPrice();
         // 转账金额 以 wei作为单位
-        const value = toWei('0.1', 'ether');
+        const value = toWei('0.01', 'ether');
         // 转账参数
         const rawTx = {
             from: accountInfo.address,

@@ -1,7 +1,6 @@
 
 import Web3 from "web3";
 import { Lazyload } from 'vant';
-
 export default (app)=>{
     (window).global = window;
     
