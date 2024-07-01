@@ -1,0 +1,9 @@
+src/assets
+
+*.yml
+*.md
+*.config.js
+tsconfig.app.json
+tsconfig.json
+tsconfig.spec.json
+angular.json
